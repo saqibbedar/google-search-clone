@@ -22,6 +22,36 @@ a {
   --link-color: rgba(0, 0, 0, 0.87);
   --marginTop: -53.6px;
 }
+.notification{
+  position: absolute;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 100;
+}
+.notification p{
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: .5px;
+  color: red;
+}
+.notification button{
+  all: unset;
+  padding: 3px 10px;
+  color: white;
+  font-size: 19px;
+  background-color: #1a73e8;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
 .container {
   padding: 12px;
   height: 85vh;

@@ -25,3 +25,16 @@ if(query.value.trim() !== ''){
         }
     }
 })
+
+let notification = document.querySelector(".notification");
+
+function save_preference() {
+    localStorage.setItem("hideNotification", 'true');
+    notification.style.display = "none";
+}
+
+let isHide = localStorage.getItem("hideNotification");
+
+if (isHide) {
+  notification.style.display = "none";
+}
